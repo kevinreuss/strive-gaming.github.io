@@ -15,142 +15,14 @@ p {
 
 #wrapper {
 	margin:0 auto;
-	width:1000px;
+	width:1200px;
 }
-
-#header {
-	padding-top: 10px;
-}
-
-#bg {
-	height:36px;
-	background:url('http://img840.imageshack.us/img840/9886/87926428.gif') repeat-x;
-}
-
-#main-image {
-	text-align:center;
-}
-
-
-
-#intro {
-	padding-top: 50px;
-}
-#intro-left {
-	width:249px;
-	float:left;
-}
-#intro-right {
-	width:500px;
-	padding-left: 40px;
-	float:left;
-}
-
-
-
-#education-work {
-	margin-top:10px;
-	margin-bottom:10px;
-	padding-top: 50px;
-	clear:both;
-}
-#education-work-entry {
-	margin-top:10px;
-	margin-bottom:10px;
-	clear:both;
-}
-#education-work-left {
-	width:700px;
-	padding-top:20px;
-	float:left;
-}
-#education-work-right {
-	width:200px;
-	padding-top:20px;
-	float:right;
-}
-
-
-
-
-#project {
-	margin-top:10px;
-	margin-bottom:10px;
-	padding-top: 50px;
-	clear:both;
-}
-#project-entry {
-	margin-top:20px;
-	margin-bottom:20px;
-	clear:both;
-}
-#project-left {
-	width:400px;
-	padding-top:20px;
-	float:left;
-}
-#project-right {
-	width:550px;
-	padding-left: 40px;
-	padding-top:20px;
-	float:left;
-}
-
-
-#footer {
-	margin-top:50px;
-	margin-bottom:50px;
-	background:#f7f7f7;
-	border-top:1px solid #f0e9eb;
-	padding-top:20px;
-	padding-bottom:20px;
-	text-align: center;
-	clear:both;
-}
-
 
 
 h1 {
-	color:#000000;
+	color:#FFFFFF;
 	margin:0 0 10px;
 	padding-bottom:10px;
-	font:normal 10px Arial, Helvetica, sans-serif;
+	font:normal 50px Arial, Helvetica, sans-serif;
 }
 
-h2 {
-	color:#000000;
-	margin:20px 0 10px;
-	padding-bottom:10px;
-	font:normal 15px Arial, Helvetica, sans-serif;
-}
-
-h3 {
-	color:#000000;
-	margin:10px 0;
-	padding-bottom:10px;
-	font:bold 20px Arial, Helvetica, sans-serif;
-	border-bottom:2px solid #efece7;
-}
-
-h4 {
-	color:#000000;
-	font:normal 15px Arial, Helvetica, sans-serif;
-	margin:0px;
-	padding-bottom:0px;
-}	
-
-h5 {
-	color:#000000;
-	margin:10px 0;
-	padding-bottom:10px;
-	font:bold 30px Arial, Helvetica, sans-serif;
-}
-
-h6 {
-	color:#000000;
-	margin:10px 0;
-	margin-top:30px;
-	padding-bottom:10px;
-	font:bold 17px Arial, Helvetica, sans-serif;
-	border-bottom:1px solid #efece7;
-}
