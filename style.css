@@ -23,6 +23,20 @@ h1 {
 	color:#FFFFFF;
 	margin:0 0 10px;
 	padding-bottom:10px;
+	font:normal 40px "Lucida Console", Monaco, monospace;
+}
+
+h2 {
+	color:#FFFFFF;
+	margin:0 0 10px;
+	padding-bottom:10px;
+	font:normal 50px "Lucida Console", Monaco, monospace;
+}
+
+h3 {
+	color:#FFFFFF;
+	margin:0 0 10px;
+	padding-bottom:10px;
 	font:normal 50px Arial, Helvetica, sans-serif;
 }
 
