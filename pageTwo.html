@@ -25,10 +25,32 @@
 		</script>
 
 		<script>
+
+			function validate_mail(mail) {  
+				if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail)) {
+					return true;
+				}
+    			alert("You have entered an invalid email address!"); 
+    			return false;
+			}
+
 			function submit() {
-				var firebaseRef = firebase.database().ref();
-				var mail_address = document.getElementsByName("mail-address")[0].value
-				firebaseRef.push({"email": mail_address});
+				
+				//var mail_address = document.getElementsByName("mail-address")[0].value
+				//var firebaseRef = firebase.database().ref();
+				//firebaseRef.push({"email": mail_address});
+				//window.location.href = "./pageThree.html"
+				
+				
+				if (validate_mail(mail_address)) {
+					var firebaseRef = firebase.database().ref();
+					firebaseRef.push({"email": mail_address});
+				}
+				else {
+					this.event.preventDefault();
+				}
+				
+				
 			}
 		</script>
 
