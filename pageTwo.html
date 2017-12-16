@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+	    <title>strive</title>
+	    <link href="style.css" rel="stylesheet" type="text/css" />
+	</head>
+
+
+	<body style="background-color:#000046">
+
+		<script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+		<script>
+			// Initialize Firebase
+			var config = {
+				apiKey: "AIzaSyCFHhT8RW3EOZz7NBJu4FzK1j_BJqxCco0",
+				authDomain: "mails-2f0dc.firebaseapp.com",
+				databaseURL: "https://mails-2f0dc.firebaseio.com",
+				projectId: "mails-2f0dc",
+				storageBucket: "mails-2f0dc.appspot.com",
+				messagingSenderId: "571842443646"
+			};
+			firebase.initializeApp(config);
+		</script>
+
+		<script>
+			function submit() {
+				var firebaseRef = firebase.database().ref();
+				var mail_address = document.getElementsByName("mail-address")[0].value
+				firebaseRef.push({"email": mail_address});
+			}
+		</script>
+
+
+		<div id="wrapper">
+			<center>
+				<img src="pictures/StriveLogo.png" width="200" height="200" />
+			</center>
+
+
+			</br></br></br></br></br>
+
+
+			<center>
+				<h5>
+					We will launch the first version of strive soon! :)
+				</h5>
+			</center>
+
+			</br></br>
+			<center>
+				<h6>
+					& would love to keep you up to date.
+				</h6>
+				<br/><br/><br/>
+			</center>
+
+			<br/><br/><br/>
+			<center>			
+				<input type="text" name="mail-address" placeholder="your email address" style="font-size:15pt; border-radius:10px; border:1px solid #ccc; padding:10px; outline: none">
+				<button class="button button1" id="submit" onclick="submit()">Join</button>
+			</center>
+
+			<!--
+			<br/><br/><br/>
+			<center>
+				<h1>facebook</h1>
+			</center>
+			-->
+
+			<!--
+			<center>
+				<a href="https://www.facebook.com/Strive-134702187229098/?ref=aymt_homepage_panel">
+					<img src="pictures/fbLogo.png" width="50" height="50" />
+				</a>
+			</center>
+			-->
+
+		</div>
+
+	</body>
+
+</html>

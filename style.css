@@ -13,11 +13,62 @@ p {
 	padding:0;
 }
 
+.button1 {
+    background-color: #00a8ff;
+    color: white;
+    font-size:15pt;
+    border-radius:10px;
+    border:1px solid #ccc;
+    padding:10px;
+    padding-left: 25pt;
+    padding-right: 25pt;
+    outline: none;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1:hover {
+    background-color: #00c7ff;
+}
+
+
+
+.button2 {
+    background-color: #00a8ff;
+    color: white;
+    font-size:30pt;
+    border-radius:10px;
+    border:1px solid #ccc;
+    padding:10px;
+    padding-left: 25pt;
+    padding-right: 25pt;
+    outline: none;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button2:hover {
+    background-color: #00c7ff;
+}
+
+
 #wrapper {
 	margin:0 auto;
 	width:1200px;
 }
 
+#wrappertwo {
+	margin:0 auto;
+	width:500px;
+}
+
+#footer {
+	background:#f7f7f7;
+	padding-top:10px;
+	padding-bottom:10px;
+	text-align: center;
+	clear:both;
+}
 
 h1 {
 	color:#FFFFFF;
@@ -40,3 +91,23 @@ h3 {
 	font:normal 50px Arial, Helvetica, sans-serif;
 }
 
+h4 {
+	color:#FFFFFF;
+	margin:0 0 10px;
+	padding-bottom:10px;
+	font:normal 50px "Lucida Console", Monaco, monospace;
+}
+
+h5 {
+	color:#FFFFFF;
+	margin:0 0 10px;
+	padding-bottom:10px;
+	font:normal 30px "Lucida Console", Monaco, monospace;
+}
+
+h6 {
+	color:#FFFFFF;
+	margin:0 0 10px;
+	padding-bottom:10px;
+	font:normal 25px "Lucida Console", Monaco, monospace;
+}
