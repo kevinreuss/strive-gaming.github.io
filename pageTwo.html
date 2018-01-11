@@ -8,7 +8,18 @@
 	</head>
 
 
-	<body style="background-color:#000046">
+	<body style="background-color:#ffffff">
+
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = 'https://connect.facebook.net/de_DE/sdk.js#xfbml=1&version=v2.11&appId=238015546398574';
+		  fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
+
 
 		<script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
 		<script>
@@ -30,55 +41,57 @@
 				if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail)) {
 					return true;
 				}
-    			alert("You have entered an invalid email address!"); 
     			return false;
 			}
 
 			function submit() {
-				
-				//var mail_address = document.getElementsByName("mail-address")[0].value
-				//var firebaseRef = firebase.database().ref();
-				//firebaseRef.push({"email": mail_address});
-				//window.location.href = "./pageThree.html"
-				
-				
+
+				var mail_address = document.getElementsByName("mail-address")[0].value
+
 				if (validate_mail(mail_address)) {
 					var firebaseRef = firebase.database().ref();
 					firebaseRef.push({"email": mail_address});
+					var snackbar = document.getElementById("snackbar")
+					snackbar.className = "show";
+					setTimeout(function(){ snackbar.className = snackbar.className.replace("show", ""); }, 3000);
 				}
 				else {
-					this.event.preventDefault();
+					var snackbar = document.getElementById("snackbartwo")
+					snackbar.className = "show";
+					setTimeout(function(){ snackbar.className = snackbar.className.replace("show", ""); }, 3000);
 				}
-				
 				
 			}
 		</script>
 
 
 		<div id="wrapper">
+
+			</br></br></br>
+
 			<center>
-				<img src="pictures/StriveLogo.png" width="200" height="200" />
+				<img src="pictures/StriveLogo.png" width="250" height="250" />
 			</center>
 
 
-			</br></br></br></br></br>
+			</br></br></br></br></br></br></br>
 
 
 			<center>
 				<h5>
-					We will launch the first version of strive soon! :)
+					We will launch the first version of strive soon!
 				</h5>
 			</center>
 
 			</br></br>
 			<center>
 				<h6>
-					& would love to keep you up to date.
+					& would love to keep in touch with you :)
 				</h6>
-				<br/><br/><br/>
 			</center>
 
-			<br/><br/><br/>
+			</br></br></br></br></br></br></br>
+
 			<center>			
 				<input type="text" name="mail-address" placeholder="your email address" style="font-size:15pt; border-radius:10px; border:1px solid #ccc; padding:10px; outline: none">
 				<button class="button button1" id="submit" onclick="submit()">Join</button>
@@ -98,6 +111,11 @@
 				</a>
 			</center>
 			-->
+
+			<div class="fb-share-button" data-href="https://www.facebook.com/Strive-134702187229098/?ref=aymt_homepage_panel" data-layout="button_count" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2FStrive-134702187229098%2F%3Fref%3Daymt_homepage_panel&amp;src=sdkpreparse">Teilen</a></div>
+
+			<div id="snackbar">Thanks for joining us! :)</div>
+			<div id="snackbartwo">Your email address is invalid :(</div>
 
 		</div>
 
