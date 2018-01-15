@@ -143,7 +143,7 @@ p {
 #footer {
     background-color: #3D3D3D;
     color: #ffffff;
-    font:15pt Arial, Helvetica, sans-serif;
+    font:15px Arial, Helvetica, sans-serif;
     padding-top:20px;
     padding-bottom:20px;
     text-align: center;
@@ -154,14 +154,14 @@ h1 {
 	color:#ffffff;
 	margin:0 0 10px;
 	padding-bottom:10px;
-	font:normal 40px "Lucida Console", Monaco, monospace;
+	font:normal 30px "Lucida Console", Monaco, monospace;
 }
 
 h2 {
 	color:#ffffff;
 	margin:0 0 10px;
 	padding-bottom:10px;
-	font:normal 50px "Lucida Console", Monaco, monospace;
+	font:normal 40px "Lucida Console", Monaco, monospace;
 }
 
 h3 {
