@@ -4,6 +4,8 @@ body {
     background-image: url("pictures/bg.png");
     background-repeat: repeat-x;
     background-color: #ffffff;
+    height: 100%;
+    width: 100%;
 }
 
 p {
