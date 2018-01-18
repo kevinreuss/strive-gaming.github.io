@@ -13,6 +13,7 @@ p {
 
 html, body {
     height: 100%;
+    width: 100%;
     margin: 0;
     padding: 0;
 }
@@ -155,7 +156,7 @@ img {
 
 
 #footer {
-    background-color: #3D3D3D;
+    background-color: #1D1D1D;
     color: #ffffff;
     font:15px Arial, Helvetica, sans-serif;
     padding-top:20px;
@@ -168,14 +169,14 @@ h1 {
 	color:#ffffff;
 	margin:0 0 10px;
 	padding-bottom:10px;
-	font:normal 30px "Lucida Console", Monaco, monospace;
+	font:normal 22px "Lucida Console", Monaco, monospace;
 }
 
 h2 {
 	color:#ffffff;
 	margin:0 0 10px;
 	padding-bottom:10px;
-	font:normal 40px "Lucida Console", Monaco, monospace;
+	font:normal 32px "Lucida Console", Monaco, monospace;
 }
 
 h3 {
