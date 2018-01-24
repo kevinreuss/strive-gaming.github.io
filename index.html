@@ -6,6 +6,10 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
+
+		<!--
+		########## SCRIPTS ##########
+		-->
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110941382-1"></script>
 		<script>
@@ -22,7 +26,63 @@
 	</head>
 
 
-	<body>	
+	<body>
+
+		<script>(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = 'https://connect.facebook.net/de_DE/sdk.js#xfbml=1&version=v2.11&appId=1500623346718532';
+			fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
+
+		<script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+		<script>
+			// Initialize Firebase
+			var config = {
+				apiKey: "AIzaSyCFHhT8RW3EOZz7NBJu4FzK1j_BJqxCco0",
+				authDomain: "mails-2f0dc.firebaseapp.com",
+				databaseURL: "https://mails-2f0dc.firebaseio.com",
+				projectId: "mails-2f0dc",
+				storageBucket: "mails-2f0dc.appspot.com",
+				messagingSenderId: "571842443646"
+			};
+			firebase.initializeApp(config);
+		</script>
+
+		<script>
+
+			function validate_mail(mail) {  
+				if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail)) {
+					return true;
+				}
+    			return false;
+			}
+
+			function submit() {
+
+				var mail_address = document.getElementsByName("mail-address")[0].value
+
+				if (validate_mail(mail_address)) {
+					var firebaseRef = firebase.database().ref();
+					firebaseRef.push({"email": mail_address});
+					var snackbar = document.getElementById("snackbar")
+					snackbar.className = "show";
+					setTimeout(function(){ snackbar.className = snackbar.className.replace("show", ""); }, 3000);
+				}
+				else {
+					var snackbar = document.getElementById("snackbartwo")
+					snackbar.className = "show";
+					setTimeout(function(){ snackbar.className = snackbar.className.replace("show", ""); }, 3000);
+				}
+				
+			}
+		</script>
+
+		<!--
+		########## SITE ##########
+		-->
 
 		</br></br></br>
 		<center>
@@ -52,20 +112,69 @@
 		</div>
 
 
-		<div style="background-color: #c0c0c0">
-			</br></br>
-			<a href="pageTwo.html">
+		</br></br></br></br>
+
+
+		<center>
+				<h6>
+					We will launch strive soon!
+				</h6>
+				</br>
+
+				<h3>
+					& would like to involve you into our design process
+				</h3>
+				<h3>
+					 to make strive the gaming platform YOU love! :)
+				</h3>
+			</center>
+
+			</br></br></br>
+
+			<div style="background-color: #c0c0c0">
+				</br></br>
 				<center>
-						<button class="button button2">sign up</button>
+					<h5>
+						So join the community now!
+					</h5>
 				</center>
-			</a>
-			</br></br>
-		</div>
+
+				</br></br>
+
+				<center>
+					<div class="fb-page" data-href="https://www.facebook.com/Strive-134702187229098/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/Strive-134702187229098/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Strive-134702187229098/">Strive</a></blockquote></div>
+				</center>
+
+				</br></br></br>
+
+				<center>
+					<h5>
+						or
+					</h5>
+				</center>
+
+				</br></br>
+
+				<center>			
+					<input type="text" name="mail-address" placeholder="your email address" style="font-size:15pt; border-radius:10px; border:1px solid #ccc; padding:10px; outline: none">
+					<button class="button button1" id="submit" onclick="submit()">Join</button>
+				</center>
+			</div>
+
+
+
+			</br></br></br></br>
+
+
 
 
 		<div id="footer">
 			&copy; 2018 Strive
 		</div>
+
+
+		<div id="snackbar">Thanks for joining us! :)</div>
+		<div id="snackbartwo">Your email address is invalid :(</div>
 
 
 		<span id="fc-14452"></span>
@@ -80,7 +189,7 @@
 		</script>
 		<noscript>
 			<a href="https://www.fastcounter.de/stats/14452/dashboard" rel="nofollow" target="_blank" title="Kostenloser Besucherz&auml;hler"><img src="https://www.fastcounter.de/fcounter.php?id=14452;" alt="Kostenloser Besucherz&auml;hler" title="Kostenloser Besucherz&auml;hler"></a>
-		</noscript>		
+		</noscript>
 
 
 	</body>

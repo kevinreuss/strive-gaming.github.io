@@ -182,10 +182,10 @@ h2 {
 }
 
 h3 {
-	color:#FFFFFF;
-	margin:0 0 10px;
-	padding-bottom:10px;
-	font:normal 50px Arial, Helvetica, sans-serif;
+    color:#000000;
+    margin:0 0 10px;
+    padding-bottom:10px;
+    font:normal 22px "Lucida Console", Monaco, monospace;
 }
 
 h4 {
@@ -203,15 +203,8 @@ h5 {
 }
 
 h6 {
-	color:#000000;
-	margin:0 0 10px;
-	padding-bottom:10px;
-	font:normal 25px "Lucida Console", Monaco, monospace;
-}
-
-h7 {
-    color:#FFFFFF;
+    color:#000000;
     margin:0 0 10px;
     padding-bottom:10px;
-    font:normal 40px Arial, Helvetica, sans-serif;
+    font:normal 32px "Lucida Console", Monaco, monospace;
 }
